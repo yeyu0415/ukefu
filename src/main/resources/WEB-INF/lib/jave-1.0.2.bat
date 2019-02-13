@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=jave-1.0.2.jar -DgroupId=lt.jave -DartifactId=jave -Dversion=1.0.2 -Dpackaging=jar

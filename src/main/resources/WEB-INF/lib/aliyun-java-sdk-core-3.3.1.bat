@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=aliyun-java-sdk-core-3.3.1.jar -DgroupId=lt.jave -DartifactId=jave -Dversion=1.0.2 -Dpackaging=jar

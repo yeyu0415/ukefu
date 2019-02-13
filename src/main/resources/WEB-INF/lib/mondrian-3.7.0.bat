@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=mondrian-3.7.0.jar -DgroupId=mondrian -DartifactId=mondrian -Dversion=3.7.0 -Dpackaging=jar

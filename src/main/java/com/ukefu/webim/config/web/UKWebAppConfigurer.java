@@ -1,5 +1,6 @@
 package com.ukefu.webim.config.web;
 
+import com.ukefu.webim.web.interceptor.RequestInterceptorHandler;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -20,6 +21,7 @@ public class UKWebAppConfigurer
         registry.addInterceptor(new UserInterceptorHandler()).addPathPatterns("/**").excludePathPatterns(new String[] {"/login.html","/im/**","/res/image*","/res/file*","/cs/**"});
         registry.addInterceptor(new CrossInterceptorHandler()).addPathPatterns(new String[] {"/**"});
         registry.addInterceptor(new LogIntercreptorHandler()).addPathPatterns(new String[] {"/**"});
+        registry.addInterceptor(new RequestInterceptorHandler()).addPathPatterns(new String[] {"/**"});
         super.addInterceptors(registry);
     }
 }
